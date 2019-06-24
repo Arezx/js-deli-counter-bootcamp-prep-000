@@ -10,8 +10,8 @@ function currentLine(NewLine) {
     if (NewLine.length === 0) {
       return "The line is currently empty."
     } else {
-      for(var is.People = 0; x < NewLine.length; is.People++) {
-        line += (is.People + 1) + ". " + NewLine[is.People] + ", "
+      for(var x = 0; x < NewLine.length; x++) {
+        line += (x + 1) + ". " + NewLine[x] + ", "
       }
       line = line.slice(0, line.length-2)
       return "The line is currently: " + line
